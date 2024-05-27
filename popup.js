@@ -19,7 +19,6 @@ document.getElementById('searchBtn').addEventListener('click', async () => {
     const searchWord = document.getElementById('searchInput').value;
     if (searchWord) {
         const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-        console.log('Buscando palabra en la pestaña:', tab);
 
         chrome.scripting.executeScript({
             target: { tabId: tab.id },
