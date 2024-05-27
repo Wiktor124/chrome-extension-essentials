@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Copiar URL",
+    "version": "1.0",
+    "description": "Copia la URL de la página actual al portapapeles.",
+    "permissions": ["tabs", "activeTab", "scripting", "clipboardWrite"],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
